@@ -1,11 +1,11 @@
-# Pain in the Net (PITN) Project Code
+# Official Implementation of *Super-Resolution of Manifold-Valued Diffusion MRI Refined by Multi-Modal Imaging*, CDMRI 2022
 
 # Setup
 
-To install as a python package, install directly from this repository (no pypi wheels yet!):
+To install as a python package, install directly from this repository (no pypi wheels!):
 
 ```bash
-pip install git+ssh://git@github.com/TylerSpears/pitn.git
+pip install git+ssh://git@github.com/TylerSpears/carn-le.git
 ```
 
 ## Environment
@@ -99,16 +99,3 @@ but this causes your local working version to be stripped of output.
 You may selectively keep cell outputs in jupyter itself by tagging a cell with the
 `keep_output` tag. See <https://github.com/kynan/nbstripout#keeping-some-output> for
 details.
-
-## Docker Containers
-
-This project contains many custom-made `Dockerfile`s, found in the `docker/` directory.
-Most of these container definitions assume that you have an nvidia GPU installed and
-configured, with an up-to-date version of
-[`nvidia-container-runtime`](<https://github.com/NVIDIA/nvidia-container-runtime>) installed.
-
-Using the `run.sh` scripts for any GUI-based containers also requires
-[`x11docker`](<https://github.com/mviereck/x11docker>).
-
-Do **not** run these containers/scripts if security is a concern to you, these were not
-developed with security practices in mind.
